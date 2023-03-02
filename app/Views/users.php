@@ -35,16 +35,17 @@
   <script>
     function confirma(){
       if (!confirm('Deseja excluir o registro?')){
-        return false
+        return false;
       }
-      return true
+      return true;
 
     }
   </script>
 
 </head>
 <body>
-  <div class="container mt-5">
+  <div class="container mt-5 bg-light">
+    <?php echo anchor(base_url('user/create'), 'Novo Usuário', ['class' => 'btn btn-success mb-3' ] ) ?>
     <table class="table">
     <tr>
       <th>ID</th>

@@ -28,4 +28,17 @@ class user extends BaseController
             echo "Erro ao excluir";
         }
     }
+    public function create(){
+        return view('form');
+    }
+    public function store(){
+        if ($this -> userModel->save($this->request->getPost())){
+            return view ("messages", [
+                'message' => 'Usuário salvo com sucesso'
+            ]);
+        }else{
+                echo "Ocorreu um erro.";
+            }
+        
+    }
 }

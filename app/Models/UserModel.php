@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 use CodeIgniter\Model;
@@ -15,10 +14,10 @@ class UserModel extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = false;
     protected $allowedFields    = [
-        'name',
-        'username',
-        'lastname',
-        'email'
+        '',
+        'Name',
+        'LastName',
+        'Email'
     ];
 
     // Dates

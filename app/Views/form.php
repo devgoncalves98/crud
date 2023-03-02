@@ -9,8 +9,21 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container mt-5">
+  <div class="container mt-3  bg-light">
     <?php echo form_open('user/store')?>
+    <div class="form-grup">
+      <label for="Name">Name</label>
+      <input type="text" name="Name" id="Name" class="form-control">
+    </div>
+    <div class="form-grup">
+      <label for="LastName">Last Name</label>
+      <input type="text" name="LastName" id="LastName" class="form-control">
+    </div>
+    <div class="form-grup">
+      <label for="Email">Email</label>
+      <input type="Email" name="Email" id="Email" class="form-control">
+    </div>
+    <input type="submit" value="Salvar" class="btn mt-2 btn-primary ">
     <?php echo form_close()?>
   </div>
 </body>
