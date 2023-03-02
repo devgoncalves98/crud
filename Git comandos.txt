@@ -1,0 +1,17 @@
+para adicionar um arquivo na lista de arquivos para commitar
+
+git add <lista de arquivos>
+
+para retirar um arquivo da lista para commitar 
+
+git reset HEAD <lista de arquivos>
+
+para commitar
+ 
+git commit -m "mensagem do commit"
+
+para enviar arquivos para o servidor
+
+git push 
+
+
